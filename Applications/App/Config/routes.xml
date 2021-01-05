@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route url="/logout" module="Connexion" action="Logout"/>
+	<route url="/" module="Reparation" action="index"/>
+	<route url="/Reparation/liste" module="Reparation" action="liste"/>
+	<route url="/Reparation/add" module="Reparation" action="add"/>
+	<route url="/Reparation/update/([0-9]+)" module="Reparation" action="update" vars="id"/>
+	<route url="/Reparation/delete/([0-9]+)" module="Reparation" action="delete" vars="id"/>
+	<route url="/Reparation/facture/([0-9]+)" module="Reparation" action="facture" vars="id"/>
+	<route url="/Pieces/vente/liste" module="Pieces" action="vente"/>
+	<route url="/Pieces/vente/add" module="Pieces" action="addVente"/>
+	<route url="/Pieces/liste" module="Pieces" action="liste"/>
+	<route url="/Pieces/delete/([0-9]+)" module="Pieces" action="delete" vars="id"/>
+	<route url="/Pieces/delete-stock/([0-9]+)" module="Pieces" action="deleteStock" vars="id"/>
+	<route url="/Pieces/get-pieces/([0-9]+)" module="Pieces" action="getPieces" vars="id"/>
+	<route url="/Pieces/vente/delete/([0-9]+)" module="Pieces" action="deleteVente" vars="id"/>
+	<route url="/Pieces/vente/facture/([0-9]+)" module="Pieces" action="facture" vars="id"/>
+
+
+	<route url="/Maintenance/add" module="Maintenance" action="add"/>
+	<route url="/Maintenance/update/([0-9]+)" module="Maintenance" action="update" vars="id"/>
+	<route url="/Maintenance/delete/([0-9]+)" module="Maintenance" action="delete" vars="id"/>
+	<route url="/Maintenance/liste" module="Maintenance" action="liste"/>
+	<route url="/Maintenance/facture/([0-9]+)" module="Maintenance" action="facture" vars="id"/>
+	<route url="/Comptabilite/facture-reglee" module="Comptabilite" action="reglee"/>
+	<route url="/Comptabilite/facture-non-reglee" module="Comptabilite" action="nonReglee"/>
+	<route url="/Maintenance/prevues" module="Maintenance" action="prevues"/>
+	<route url="/Compte/liste" module="Compte" action="liste"/>
+	<route url="/Compte/add" module="Compte" action="add"/>
+	<route url="/Compte/update/([0-9]+)" module="Compte" action="update" vars="id"/>
+	<route url="/Compte/delete/([0-9]+)" module="Compte" action="delete" vars="id"/>
+	<route url="/Compte/profil" module="Compte" action="userProfil"/>
+	<route url="/Compte/username" module="Compte" action="changeUsername"/>
+	<route url="/Compte/check-password" module="Compte" action="userCheckPassword"/>
+	<route url="/Compte/new-password" module="Compte" action="userNewPassword"/>
+
+</routes>

@@ -1,0 +1,2074 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pas",
+				"password"
+			],
+			[
+				"Ref",
+				"RefStatut"
+			],
+			[
+				"tbl",
+				"tbleusers"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"password",
+				"password_hash"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"main",
+				"maintenance"
+			],
+			[
+				"nbre",
+				"nbre_fctr_imp"
+			],
+			[
+				"ven",
+				"vente"
+			],
+			[
+				"ve",
+				"ventes"
+			],
+			[
+				"re",
+				"reparation"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"mod",
+				"module"
+			],
+			[
+				"rep",
+				"reparation"
+			],
+			[
+				"ta",
+				"translate\tAttr"
+			],
+			[
+				"add",
+				"addVar"
+			],
+			[
+				"get",
+				"getManagerOf"
+			],
+			[
+				"ma",
+				"maintenances"
+			],
+			[
+				"S",
+				"Statut"
+			],
+			[
+				"m",
+				"maintenance"
+			],
+			[
+				"mai",
+				"maintenance"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"co",
+				"col-sm-10"
+			],
+			[
+				"col",
+				"col-sm-2"
+			],
+			[
+				"Sta",
+				"statut"
+			],
+			[
+				"r",
+				"reparation"
+			],
+			[
+				"fa-",
+				"fa-plus"
+			],
+			[
+				"l",
+				"liste"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"No",
+				"Nom"
+			],
+			[
+				"pi",
+				"pièce"
+			],
+			[
+				"pie",
+				"piece"
+			],
+			[
+				"piece",
+				"pieces"
+			],
+			[
+				"border-r",
+				"border-right\tproperty"
+			],
+			[
+				"bo",
+				"border\tproperty"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"from",
+				"form-control"
+			],
+			[
+				"res",
+				"resultat_out"
+			],
+			[
+				"Qte",
+				"QteEntree"
+			],
+			[
+				"st",
+				"stock"
+			],
+			[
+				"s",
+				"stock"
+			],
+			[
+				"IN",
+				"INTO"
+			],
+			[
+				"else",
+				"elseif\telseif …"
+			],
+			[
+				"bt",
+				"btn-primary"
+			],
+			[
+				"p",
+				"pieces"
+			],
+			[
+				"pri",
+				"prix"
+			],
+			[
+				"sta",
+				"statut"
+			],
+			[
+				"te",
+				"table"
+			],
+			[
+				"mon",
+				"montant_ouverture"
+			],
+			[
+				"tb",
+				"tbllevel"
+			],
+			[
+				"tbll",
+				"tbllevel"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"tot",
+				"totalGeneral"
+			],
+			[
+				"ava",
+				"avance_in"
+			],
+			[
+				"avance",
+				"avances"
+			],
+			[
+				"texta",
+				"text-align\tproperty"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"a",
+				"avance"
+			],
+			[
+				"fich",
+				"fiches"
+			],
+			[
+				"sous",
+				"sous_total_drop"
+			],
+			[
+				"categ",
+				"categorie"
+			],
+			[
+				"backgrcol",
+				"background-color\tproperty"
+			],
+			[
+				"to",
+				"total_hpay"
+			],
+			[
+				"toal",
+				"total_hfll"
+			],
+			[
+				"local",
+				"localite"
+			],
+			[
+				"en",
+				"entree"
+			],
+			[
+				"machi",
+				"machine"
+			],
+			[
+				"ut",
+				"utf8_encode"
+			],
+			[
+				"f",
+				"fiche"
+			],
+			[
+				"total_",
+				"total_drop"
+			],
+			[
+				"date_",
+				"date_fin"
+			],
+			[
+				"date_d",
+				"date_debut"
+			],
+			[
+				"w",
+				"win"
+			],
+			[
+				"ja",
+				"Jackpot"
+			],
+			[
+				"loca",
+				"localites"
+			],
+			[
+				"Contr",
+				"Controle"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"loc",
+				"localite"
+			],
+			[
+				"exe",
+				"execute"
+			],
+			[
+				"ca",
+				"categorie"
+			],
+			[
+				"exp",
+				"expat"
+			],
+			[
+				"dat",
+				"date_fin"
+			],
+			[
+				"jso",
+				"json"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"date",
+				"date_fin"
+			],
+			[
+				"lnew",
+				"lnews"
+			],
+			[
+				"jo",
+				"json"
+			],
+			[
+				"__",
+				"__construct"
+			],
+			[
+				"this",
+				"This"
+			],
+			[
+				"html",
+				"html5"
+			],
+			[
+				"fly_in",
+				"fly_inter"
+			],
+			[
+				"comp",
+				"compte"
+			],
+			[
+				"rout",
+				"route"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"User",
+				"Username"
+			],
+			[
+				"fa",
+				"fa-user"
+			],
+			[
+				"ex",
+				"expatries"
+			],
+			[
+				"Exp",
+				"Expatrie"
+			],
+			[
+				"prin",
+				"printListe"
+			],
+			[
+				"expa",
+				"expatriés"
+			],
+			[
+				"Ex",
+				"Expatrie"
+			],
+			[
+				"int",
+				"intnat"
+			],
+			[
+				"intn",
+				"id_intnat"
+			],
+			[
+				"cha",
+				"chart"
+			],
+			[
+				"chart",
+				"ChartJS"
+			],
+			[
+				"per",
+				"perf_crew_roster"
+			],
+			[
+				"fly",
+				"fly_out"
+			],
+			[
+				"ro",
+				"route"
+			],
+			[
+				"ros",
+				"rosters"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"date_f",
+				"date_fin"
+			],
+			[
+				"compa",
+				"Company"
+			],
+			[
+				"new",
+				"new_roster"
+			],
+			[
+				"che",
+				"check_roster"
+			],
+			[
+				"fl",
+				"fly_out"
+			],
+			[
+				"man",
+				"manager"
+			],
+			[
+				"da",
+				"dao"
+			],
+			[
+				"cal",
+				"horizontal_calendar"
+			],
+			[
+				"lo",
+				"locale"
+			],
+			[
+				"ite",
+				"item2"
+			],
+			[
+				"Hor",
+				"horizontal_calendar"
+			],
+			[
+				"Y",
+				"Y-m-d"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Applications/App/Modules/Connexion/ConnexionController.class.php",
+			"settings":
+			{
+				"buffer_size": 1969,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Templates/layout.php",
+			"settings":
+			{
+				"buffer_size": 11318,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/CompteController.class.php",
+			"settings":
+			{
+				"buffer_size": 3822,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/Views/userNewPassword.php",
+			"settings":
+			{
+				"buffer_size": 1115,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/Views/userProfil.php",
+			"settings":
+			{
+				"buffer_size": 716,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/Views/add.php",
+			"settings":
+			{
+				"buffer_size": 2517,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Config/routes.xml",
+			"settings":
+			{
+				"buffer_size": 2376,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/Views/userCheckPassword.php",
+			"settings":
+			{
+				"buffer_size": 879,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/Views/changeUsername.php",
+			"settings":
+			{
+				"buffer_size": 823,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Library/Models/UserManagerPDO.class.php",
+			"settings":
+			{
+				"buffer_size": 3787,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Compte/Views/liste.php",
+			"settings":
+			{
+				"buffer_size": 1470,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Pieces/Views/vente.php",
+			"settings":
+			{
+				"buffer_size": 5169,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Library/Models/PiecesManagerPDO.class.php",
+			"settings":
+			{
+				"buffer_size": 8475,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Applications/App/Modules/Reparation/ReparationController.class.php",
+			"settings":
+			{
+				"buffer_size": 3562,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Library/Models/MaintenanceManagerPDO.class.php",
+			"settings":
+			{
+				"buffer_size": 5378,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lay",
+				"Set Syntax: OCamlyacc"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inder",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"indentation",
+			"indent",
+			"ping"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/harlem",
+		"/C/wamp/www/harlem/Applications",
+		"/C/wamp/www/harlem/Applications/App",
+		"/C/wamp/www/harlem/Applications/App/Modules",
+		"/C/wamp/www/harlem/Applications/App/Modules/Compte",
+		"/C/wamp/www/harlem/Applications/App/Modules/Compte/Views",
+		"/C/wamp/www/harlem/Applications/App/Modules/Connexion",
+		"/C/wamp/www/harlem/Applications/App/Modules/Connexion/Views",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/Views",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces/Views",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/Views",
+		"/C/wamp/www/harlem/Library",
+		"/C/wamp/www/harlem/Library/Models",
+		"/C/wamp/www/harlem/Web"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/harlem/Library/Models/UserManager.class.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces/Views/addVente.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces/PiecesController.class.php",
+		"/C/wamp/www/harlem/Library/Models/ReparationManagerPDO.class.php",
+		"/C/wamp/www/harlem/Library/Models/MaintenanceManagerPDO.class.php",
+		"/C/wamp/www/harlem/Library/Models/PiecesManagerPDO.class.php",
+		"/C/wamp/www/harlem/Applications/App/Templates/layout.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/ReparationController.class.php",
+		"/C/wamp/www/harlem/Applications/App/Config/routes.xml",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/Views/prevues.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/Views/index.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Connexion/ConnexionController.class.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/MaintenanceController.class.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Comptabilite/Views/nonReglee.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Comptabilite/Views/reglee.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Comptabilite/ComptabiliteController.class.php",
+		"/C/wamp/www/harlem/Web/assets/bower_components/jquery/src/ajax/parseXML.js",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/Views/facture.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/Views/liste.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/Views/facture.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/Views/liste.php",
+		"/C/wamp/www/harlem/Applications/App/Templates/invoice.php",
+		"/C/Users/HP/Desktop/Centre/Game/test/main.cpp",
+		"/C/wamp/www/harlem/Library/Page.class.php",
+		"/C/Users/HP/Desktop/Centre/inps teledeclaration/AdminLTE-2.4.18/pages/examples/invoice-print.html",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces/Views/vente.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/Views/add.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/Views/update.php",
+		"/C/wamp/www/harlem/Library/Models/MaintenanceManager.class.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/MaintenanceController.class",
+		"/C/wamp/www/harlem/Applications/App/Modules/Maintenance/kjfd",
+		"/C/wamp/www/harlem/Applications/App/Templates/json.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/Views/update.php",
+		"/C/wamp/www/harlem/Library/Models/PiecesManager.class.php",
+		"/C/wamp/www/harlem/Library/DBFactory.class.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces/Views/getPieces.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Pieces/Views/liste.php",
+		"/C/wamp/www/harlem/Applications/App/Modules/Reparation/Views/add.php",
+		"/C/wamp/www/harlem/Web/assets/bower_components/select2/dist/js/select2.full.js",
+		"/C/wamp/www/harlem/Library/Models/ReparationManager.class.php",
+		"/C/wamp/www/harlem/garage.sublime-workspace",
+		"/C/wamp/www/harlem/garage.sublime-project",
+		"/C/wamp/www/casino/roster.sublime-project",
+		"/C/wamp/www/casino/roster.sublime-workspace",
+		"/C/wamp/www/casino/Applications/Casino/Modules/TypeJeu/Views/liste.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/TypeJeu/Views/update.php",
+		"/C/wamp/www/casino/Applications/Casino/Config/routes.xml",
+		"/C/wamp/www/casino/Library/Models/TableManagerPDO.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Templates/Components/sidebar.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Table/Views/update.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Table/Views/editBilletage.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Table/Views/add.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Table/TableController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Compte/Views/userProfil.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Compte/Views/changeUsername.php",
+		"/C/wamp/www/casino/Library/Models/CompteManagerPDO.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Table/Views/liste.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Connexion/ConnexionController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Templates/Components/navbar.php",
+		"/C/wamp/www/casino/Applications/Casino/Templates/layout.php",
+		"/C/wamp/www/casino/Assets/vue.js",
+		"/C/wamp/www/casino/Library/Models/TypeJeuManagerPDO.class.php",
+		"/C/wamp/www/casino/Library/Models/TableManager.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/TypeJeu/Views/add.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/TypeJeu/TypeJeuController.class.php",
+		"/C/wamp/www/casino/Library/Models/TypeJeuManager.class.php",
+		"/C/wamp/www/casino/Assets/jquery.js",
+		"/C/wamp/www/inps/index.php",
+		"/C/wamp/www/inps/pages/admin/add_user.php",
+		"/C/wamp/www/inps/pages/admin.php",
+		"/C/wamp/www/inps/._pages.php",
+		"/C/Users/HP/Downloads/architectui-html-free/architectui-html-free/architectui-html-free/components-modals.html",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Machine/MachineController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Fiche/FicheController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Controle/Views/content.php",
+		"/C/wamp/www/casino/Library/Models/FicheManagerPDO.class.php",
+		"/C/wamp/www/casino/Library/Models/ReleverManagerPDO.class.php",
+		"/C/wamp/www/casino/Library/Application.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/listeJournalierDetail.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Fiche/Views/listeJournalierDetail.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Fiche/Views/add.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/add.php",
+		"/C/wamp/www/casino/Library/Router.class.php",
+		"/C/wamp/www/casino/Library/Route.class.php",
+		"/C/wamp/www/casino/Library/Models/ControleManager.class.php",
+		"/C/wamp/www/casino/Library/Models/ControleManagerPDO.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Controle/ControleController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Controle/Views/index.php",
+		"/C/wamp/www/casino/Library/Models/CategorieMachineManagerPDO.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/listeJournalier.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Fiche/Views/listeJournalier.php",
+		"/C/wamp/www/casino/main.css",
+		"/C/wamp/www/casino/Applications/Casino/Templates/login.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Connexion/Views/index.php",
+		"/C/wamp/www/casino/Applications/Casino/Casino.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Fiche/Views/listeMensuel.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/listeMensuel.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/ReleverController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/liste.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Machine/Views/liste.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Machine/Views/add.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Localite/Views/liste.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Localite/Views/add.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Compte/Views/liste.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Compte/Views/add.php",
+		"/C/Users/HP/Desktop/liste_salarie_declaration.sql",
+		"/C/wamp/www/casino/Library/Models/FicheManager.class.php",
+		"/C/wamp/www/casino/Library/Models/ReleverManager.class.php",
+		"/C/Users/HP/AppData/Local/Temp/Rar$DRa0.303/architectui-html-free/architectui-html-free/components-tabs.html",
+		"/C/wamp/www/casino/Library/Models/MachineManagerPDO.class.php",
+		"/C/wamp/www/casino/Library/Models/CategorieMachineManager.class.php",
+		"/C/wamp/www/casino/Library/Models/ControleManager.",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Controle/ControleController.class",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/addGroupeReleve.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/updateGroupeReleve.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/listeGroupeReleve.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Relever/Views/listeGroupehp",
+		"/C/wamp/www/casino/Library/User.class.php",
+		"/C/wamp/www/casino/Library/Models/LevelManagerPDO.class.php",
+		"/C/wamp/www/casino/Library/Models/LevelManager.class.php",
+		"/C/wamp/www/casino/Library/Models/CompteManager.class.php",
+		"/C/wamp/www/casino/Library/Models/LocaliteManagerPDO.class.php",
+		"/C/wamp/www/casino/Library/Models/LocaliteManager.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Localite/LocaliteController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Dashboard/DashboardController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Compte/CompteController.class.php",
+		"/C/wamp/www/casino/Applications/Casino/Modules/Dashboard/Views/index.php",
+		"/C/wamp/www/casino/Applications/Casino/Config/config.json"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 113.0,
+		"where_history":
+		[
+			"C:\\wamp\\www\\roster\\Library",
+			"C:\\wamp\\www\\roster\\Applications\\Roster\\Modules\\Ticket"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/profil",
+			"card",
+			"set",
+			"getAttribute('id')",
+			"card",
+			"/profil",
+			"text-muted",
+			" text-center",
+			"card",
+			"Member since Nov. 2012",
+			"id=",
+			"RefUsers",
+			"/compte",
+			"isset($compte[",
+			"/compte",
+			"protected",
+			"User $user",
+			"User $User",
+			"login",
+			"add(",
+			", \\P",
+			", $",
+			"$User",
+			"add(",
+			"prenom",
+			"Name",
+			"add(",
+			"add",
+			"btn-sm",
+			"id",
+			"'title'",
+			"liste",
+			" users",
+			"compta",
+			"Assets",
+			"img src=\"dist",
+			"img src=\"",
+			"wrench",
+			"imp",
+			"tblreparation",
+			"sets",
+			"setR",
+			"setrep",
+			"setrap",
+			"addve",
+			"reparation",
+			"Reparation",
+			"reparation",
+			"ventes",
+			"ventep",
+			"vente",
+			"RefReparation",
+			"$reparation",
+			"wrench",
+			"More info",
+			"prevues",
+			">10<",
+			">9<",
+			"reglee",
+			"listeReglee",
+			"$reparation",
+			"ventes",
+			"liste",
+			"Maintenance",
+			"liste",
+			"Connexion",
+			"facture-reglee",
+			"Gestion du",
+			"setStatut",
+			"RefMaintenance",
+			"$maintenance",
+			"nbre_mtn",
+			"qte_pieces",
+			"PARAM_STR",
+			"mois",
+			"req",
+			"../..",
+			"$maintenances",
+			"#div_rapport",
+			"change",
+			"id",
+			"$reparation",
+			"prix",
+			"th",
+			"telephone",
+			"nom",
+			"$vente",
+			"PiecesManager",
+			"$vente",
+			"liste",
+			"RefPieces",
+			", ",
+			"nom",
+			"`",
+			"tblpieces",
+			"$piece",
+			"class=\"form-control\"",
+			"$piece",
+			"th",
+			"date",
+			"addv",
+			"prenom",
+			"nom",
+			"Nom",
+			"nom",
+			"date",
+			"/Reparation/liste",
+			"rép",
+			"\"quantite\"",
+			"addS",
+			"        \n",
+			"add(",
+			"add",
+			"addS",
+			"delete from",
+			" rowspan=\"<?= $vente['NbrePiece']; ?>\"",
+			" rowspan=\"1\"",
+			"_in",
+			"_in ",
+			"vente",
+			"date",
+			"outStock",
+			"'+(Number(i)+1)+'",
+			"addStock",
+			"get(",
+			"(i+1)",
+			"date",
+			"pieces"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Applications/App/Modules/Connexion/ConnexionController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								774,
+								782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Applications/App/Templates/layout.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4282,
+								4282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2272.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Applications/App/Modules/Compte/CompteController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1336,
+								1346
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 686.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Applications/App/Modules/Compte/Views/userNewPassword.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							],
+							[
+								110,
+								110
+							],
+							[
+								139,
+								139
+							],
+							[
+								167,
+								167
+							],
+							[
+								375,
+								375
+							],
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 411.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Applications/App/Modules/Compte/Views/userProfil.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								688,
+								688
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Applications/App/Modules/Compte/Views/add.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Applications/App/Config/routes.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2354,
+								2354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Applications/App/Modules/Compte/Views/userCheckPassword.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Applications/App/Modules/Compte/Views/changeUsername.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Library/Models/UserManagerPDO.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3721,
+								3721
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1724.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Applications/App/Modules/Compte/Views/liste.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							],
+							[
+								1025,
+								1025
+							],
+							[
+								1150,
+								1150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 536.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Applications/App/Modules/Pieces/Views/vente.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4114,
+								4114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2060.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Library/Models/PiecesManagerPDO.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7383,
+								7383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Applications/App/Modules/Reparation/ReparationController.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								752,
+								837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Library/Models/MaintenanceManagerPDO.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4025,
+								4025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2523.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "garage.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rou",
+				"Applications\\App\\Config\\routes.xml"
+			],
+			[
+				"lay",
+				"Applications\\App\\Templates\\layout.php"
+			],
+			[
+				"mainte",
+				"Library\\Models\\MaintenanceManagerPDO.class.php"
+			],
+			[
+				"repar",
+				"Library\\Models\\ReparationManagerPDO.class.php"
+			],
+			[
+				"Piece",
+				"Library\\Models\\PiecesManagerPDO.class.php"
+			],
+			[
+				"pieces",
+				"Library\\Models\\PiecesManagerPDO.class.php"
+			],
+			[
+				"reap",
+				"Library\\Models\\ReparationManagerPDO.class.php"
+			],
+			[
+				"Maint",
+				"Library\\Models\\MaintenanceManagerPDO.class.php"
+			],
+			[
+				"xml",
+				"Web\\assets\\bower_components\\jquery\\src\\ajax\\parseXML.js"
+			],
+			[
+				"rout",
+				"Applications\\App\\Config\\routes.xml"
+			],
+			[
+				"layo",
+				"Applications\\App\\Templates\\layout.php"
+			],
+			[
+				"piece",
+				"Library\\Models\\PiecesManagerPDO.class.php"
+			],
+			[
+				"maint",
+				"Library\\Models\\MaintenanceManagerPDO.class.php"
+			],
+			[
+				"repa",
+				"Library\\Models\\ReparationManagerPDO.class.php"
+			],
+			[
+				"route",
+				"Applications\\App\\Config\\routes.xml"
+			],
+			[
+				"Main",
+				"Library\\Models\\MaintenanceManagerPDO.class.php"
+			],
+			[
+				"l",
+				"Applications\\App\\Templates\\layout.php"
+			],
+			[
+				"addV",
+				"Applications\\App\\Modules\\Pieces\\Views\\addVente.php"
+			],
+			[
+				"mana",
+				"Library\\Models\\PiecesManagerPDO.class.php"
+			],
+			[
+				"PDO",
+				"Library\\Models\\PiecesManagerPDO.class.php"
+			],
+			[
+				"",
+				"Applications\\App\\Config\\routes.xml"
+			],
+			[
+				"routes",
+				"Applications\\App\\Config\\routes.xml"
+			],
+			[
+				"dbfa",
+				"Library\\DBFactory.class.php"
+			],
+			[
+				"ta",
+				"Applications\\Casino\\Modules\\Table\\TableController.class.php"
+			],
+			[
+				"comptema",
+				"Library\\Models\\CompteManagerPDO.class.php"
+			],
+			[
+				"nav",
+				"Applications\\Casino\\Templates\\Components\\navbar.php"
+			],
+			[
+				"Conn",
+				"Applications\\Casino\\Modules\\Connexion\\ConnexionController.class.php"
+			],
+			[
+				"table",
+				"Applications\\Casino\\Modules\\Table\\TableController.class.php"
+			],
+			[
+				"userprof",
+				"Applications\\Casino\\Modules\\Compte\\Views\\userProfil.php"
+			],
+			[
+				"type",
+				"Library\\Models\\TypeJeuManagerPDO.class.php"
+			],
+			[
+				"tabe",
+				"Library\\Models\\TableManager.class.php"
+			],
+			[
+				"tablema",
+				"Library\\Models\\TableManagerPDO.class.php"
+			],
+			[
+				"Tablecon",
+				"Applications\\Casino\\Modules\\Table\\TableController.class.php"
+			],
+			[
+				"compte",
+				"Library\\Models\\CompteManagerPDO.class.php"
+			],
+			[
+				"side",
+				"Applications\\Casino\\Templates\\Components\\sidebar.php"
+			],
+			[
+				"appli",
+				"Library\\Application.class.php"
+			],
+			[
+				"fiche",
+				"Library\\Models\\FicheManagerPDO.class.php"
+			],
+			[
+				"conte",
+				"Applications\\Casino\\Modules\\Controle\\Views\\content.php"
+			],
+			[
+				"CategorieMachine",
+				"Library\\Models\\CategorieMachineManagerPDO.class.php"
+			],
+			[
+				"controlem",
+				"Library\\Models\\ControleManager.class.php"
+			],
+			[
+				"controle",
+				"Library\\Models\\ControleManagerPDO.class.php"
+			],
+			[
+				"la",
+				"Applications\\Casino\\Templates\\layout.php"
+			],
+			[
+				"na",
+				"Applications\\Casino\\Templates\\Components\\navbar.php"
+			],
+			[
+				"relev",
+				"Library\\Models\\ReleverManager.class.php"
+			],
+			[
+				"comp",
+				"Applications\\Casino\\Modules\\Compte\\CompteController.class.php"
+			],
+			[
+				"compt",
+				"Applications\\Casino\\Modules\\Compte\\CompteController.class.php"
+			],
+			[
+				"user",
+				"Library\\User.class.php"
+			],
+			[
+				"expatrie add.php",
+				"Applications\\Roster\\Modules\\Expatrie\\Views\\add.php"
+			],
+			[
+				"roster index",
+				"Applications\\Roster\\Modules\\Roster\\Views\\index.php"
+			],
+			[
+				"roster man pdo",
+				"Library\\Models\\RosterManagerPDO.class.php"
+			],
+			[
+				"dash con",
+				"Applications\\Roster\\Modules\\Dashboard\\DashboardController.class.php"
+			],
+			[
+				"Dashboard/in",
+				"Applications\\Roster\\Modules\\Dashboard\\Views\\index.php"
+			],
+			[
+				"listephp",
+				"Applications\\Roster\\Modules\\Expatrie\\Views\\liste.php"
+			],
+			[
+				"RosterContr",
+				"Applications\\Roster\\Modules\\Roster\\RosterController.class.php"
+			],
+			[
+				"lister",
+				"Applications\\Roster\\Modules\\Expatrie\\Views\\listeRoster.php"
+			],
+			[
+				"config",
+				"Applications\\Roster\\Config\\config.json"
+			],
+			[
+				"index.php",
+				"Applications\\Roster\\Modules\\Connexion\\Views\\index.php"
+			],
+			[
+				"roste",
+				"Applications\\Roster\\Roster.class.php"
+			],
+			[
+				"app",
+				"Library\\ApplicationComponent.class.php"
+			],
+			[
+				"page",
+				"Library\\Page.class.php"
+			],
+			[
+				"bac",
+				"Library\\BackController.class.php"
+			],
+			[
+				"back",
+				"Library\\BackController.class.php"
+			],
+			[
+				"applic",
+				"Library\\Application.class.php"
+			],
+			[
+				"conf",
+				"Library\\Config.class.php"
+			],
+			[
+				"rosterm",
+				"Library\\Models\\RosterManagerPDO.class.php"
+			],
+			[
+				"rsoterco",
+				"Applications\\Roster\\Modules\\Roster\\RosterController.class.php"
+			],
+			[
+				"prof",
+				"Applications\\Roster\\Modules\\Compte\\Views\\userProfil.php"
+			],
+			[
+				"userma",
+				"Library\\Models\\UserManagerPDO.class.php"
+			],
+			[
+				"userm",
+				"Library\\Models\\UserManager.class.php"
+			],
+			[
+				"ros",
+				"Library\\Models\\RosterManagerPDO.class.php"
+			],
+			[
+				"dash",
+				"Applications\\Roster\\Modules\\Dashboard\\DashboardController.class.php"
+			],
+			[
+				"expa",
+				"Library\\Models\\ExpatrieManagerPDO.class.php"
+			],
+			[
+				"exp",
+				"Applications\\Roster\\Modules\\Expatrie\\ExpatrieController.class.php"
+			],
+			[
+				"ex",
+				"Library\\Entities\\Expatrie.class.php"
+			],
+			[
+				"rostercontr",
+				"Applications\\Roster\\Modules\\Roster\\RosterController.class.php"
+			],
+			[
+				"expatrieM",
+				"Library\\Models\\ExpatrieManagerPDO.class.php"
+			],
+			[
+				"hor",
+				"Assets\\horizontal_calendar\\horizontal_calendar_color.css"
+			],
+			[
+				".css",
+				"Assets\\plugins\\fullcalendar\\main.css"
+			],
+			[
+				"expatrie",
+				"Library\\Entities\\Expatrie.class.php"
+			],
+			[
+				"dashboardC",
+				"Applications\\Roster\\Modules\\Dashboard\\DashboardController.class.php"
+			],
+			[
+				"pa",
+				"Library\\Page.class.php"
+			],
+			[
+				"countr",
+				"Library\\Entities\\Country.class.php"
+			],
+			[
+				"roster",
+				"Library\\Entities\\Roster.class.php"
+			],
+			[
+				"rost",
+				"Library\\Entities\\Roster.class.php"
+			],
+			[
+				"connex",
+				"Applications\\Roster\\Modules\\Connexion\\ConnexionController.class.php"
+			],
+			[
+				"dbf",
+				"Library\\DBFactory.class.php"
+			],
+			[
+				"DB",
+				"Library\\DBFactory.class.php"
+			],
+			[
+				"roster.",
+				"Applications\\Roster\\Roster.class.php"
+			],
+			[
+				"ro",
+				"Library\\Entities\\Roster.class.php"
+			],
+			[
+				"r",
+				"Library\\Entities\\Roster.class.php"
+			],
+			[
+				"lis",
+				"Applications\\Roster\\Modules\\Expatrie\\Views\\liste.php"
+			],
+			[
+				"http",
+				"Library\\HTTPResponse.class.php"
+			],
+			[
+				"a",
+				"Library\\Application.class.php"
+			],
+			[
+				"Rost",
+				"Applications\\Roster\\Roster.class.php"
+			],
+			[
+				"App",
+				"Library\\ApplicationController.class.php"
+			],
+			[
+				"backc",
+				"Library\\BackController.class.php"
+			],
+			[
+				"depa",
+				"Applications\\Roster\\Modules\\Departement\\DepartementController.class.php"
+			],
+			[
+				"depar",
+				"Library\\Models\\DepartementManagerPDO.class.php"
+			],
+			[
+				"dep",
+				"Library\\Entities\\Departement.class.php"
+			],
+			[
+				"Depar",
+				"Library\\Models\\DepartementManager.class.php"
+			],
+			[
+				"Depa",
+				"Applications\\Roster\\Modules\\Departement\\DepartementController.class.php"
+			],
+			[
+				"Room",
+				"Applications\\Roster\\Modules\\RoomLocated\\RoomLocatedController.class.php"
+			],
+			[
+				"Depart",
+				"Applications\\Roster\\Modules\\Departement\\DepartementController.class.php"
+			],
+			[
+				"Dep",
+				"Library\\Models\\DepartementManagerPDO.class.php"
+			],
+			[
+				"expatr",
+				"Applications\\Roster\\Modules\\Expatrie\\ExpatrieController.class.php"
+			],
+			[
+				"DepartementManagerPDO",
+				"Library\\Models\\DepartementManagerPDO.class.php"
+			],
+			[
+				"DepartementController",
+				"Applications\\Roster\\Modules\\Departement\\DepartementController.class.php"
+			],
+			[
+				"use",
+				"Library\\User.class.php"
+			],
+			[
+				"tick",
+				"Applications\\Roster\\Modules\\Ticket\\TicketController.class.php"
+			],
+			[
+				"sideba",
+				"Applications\\Roster\\Templates\\Components\\sidebar.php"
+			],
+			[
+				"ticket",
+				"Library\\Entities\\Ticket.class.php"
+			],
+			[
+				"tic",
+				"Library\\Entities\\Ticket.class.php"
+			],
+			[
+				"contr",
+				"Applications\\Roster\\Modules\\Ticket\\TicketController.class.php"
+			],
+			[
+				"deel",
+				"Applications\\Roster\\Modules\\Ticket\\Views\\delete.php"
+			],
+			[
+				"contro",
+				"Applications\\Roster\\Modules\\Connexion\\ConnexionController.class.php"
+			],
+			[
+				"control",
+				"Applications\\Roster\\Modules\\Ticket\\TicketController.class.php"
+			],
+			[
+				"boo",
+				"bootstrap.php"
+			],
+			[
+				"db",
+				"Library\\DBFactory.class.php"
+			],
+			[
+				"response",
+				"Library\\HTTPResponse.class.php"
+			],
+			[
+				"appl",
+				"Library\\Application.class.php"
+			],
+			[
+				"get",
+				"Assets\\plugins\\filterizr\\getLayoutPositions.d.ts"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
