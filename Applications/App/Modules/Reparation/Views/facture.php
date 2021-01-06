@@ -21,7 +21,7 @@
         <div class="col-sm-4 invoice-col">
             A
             <address>
-                <strong><?= $reparation['PrenomClient'].' '.$reparation['NomClient']; ?></strong><br>
+                <strong><?= $reparation['PrenomClient'] . ' ' . $reparation['NomClient']; ?></strong><br>
                 Téléphone : <?= $reparation['TelephoneClient']; ?><br>
             </address>
         </div>
@@ -47,8 +47,15 @@
                     <tr>
                         <td><?= $reparation['Plaque']; ?></td>
                         <td><?= $reparation['DescriptionProbleme']; ?></td>
-                        <td><?= number_format($reparation['Montant'],0,',','.'); ?></td>
+                        <td><?= number_format($reparation['Montant'], 0, ',', '.'); ?></td>
                     </tr>
+                    <?php foreach ($pieces as $piece) { ?>
+                    <tr>
+                        <td><?= $piece['NomPiece']; ?></td>
+                        <td><?= $piece['Quantite']; ?></td>
+                        <td><?= $piece['Quantite'] * $piece['Prix']; ?></td>
+                    </tr>
+                    <?php } ?>
                 </tbody>
             </table>
         </div>
