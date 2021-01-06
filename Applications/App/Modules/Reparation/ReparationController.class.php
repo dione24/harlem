@@ -72,7 +72,6 @@ class ReparationController extends \Library\BackController
     {
         $this->page->setTemplate('invoice');
         $this->page->addVar("titles", "Facture de la réparation");
-
         $reparation = $this->managers->getManagerOf('Reparation')->get($request->getData('id'));
         $this->page->addVar('reparation', $reparation);
     }

@@ -69,7 +69,7 @@ class PiecesController extends \Library\BackController
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Pieces')->updateVente($request);
-            //$this->app()->httpResponse()->redirect('/Pieces/vente/liste');  
+            $this->app()->httpResponse()->redirect('/Pieces/vente/liste');
         }
 
         $vente = $this->managers->getManagerOf('Pieces')->getVente($request->getData('id'));

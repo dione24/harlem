@@ -48,7 +48,7 @@
                                 <label for="vente_pieces" class="col-sm-2 control-label">Pièces</label>
                                 <div class="col-sm-10">
                                     <select id="vente_pieces" name="vente_pieces[]" multiple
-                                        class="form-control  select2" required>
+                                        class="form-control  select2">
                                         <?php foreach ($pieces as $piece) { ?>
                                         <option value="<?= $piece['RefPieces']; ?>"
                                             <?= (isset($vente) && in_array($piece['RefPieces'], $v_pieces)) ? 'selected' : ''; ?>>
