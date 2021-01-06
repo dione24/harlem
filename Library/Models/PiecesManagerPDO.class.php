@@ -203,4 +203,12 @@ class PiecesManagerPDO extends PiecesManager
         $resultat = $requete->fetchAll();
         return $resultat;
     }
+
+    public function listeNonReglee()
+    {
+        $requete = $this->dao->prepare("SELECT tblvente.*,COUNT(tblstockpieces.RefVente) AS NbrePiece, SUM(tblstockpieces.Quantite*tblpieces.Prix) AS MontantTotal FROM tblvente INNER JOIN tblstockpieces ON (tblvente.RefVente = tblstockpieces.RefVente) INNER JOIN tblpieces ON (tblstockpieces.RefPieces = tblpieces.RefPieces) WHERE tblstockpieces.RefTypeOperation=2 AND tblvente.RefStatut=1 GROUP BY tblvente.RefVente ");
+        $requete->execute();
+        $resultat = $requete->fetchAll();
+        return $resultat;
+    }
 }
