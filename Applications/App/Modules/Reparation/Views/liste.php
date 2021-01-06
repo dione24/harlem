@@ -41,9 +41,11 @@
                                           class="btn btn-xs btn-default" target="_blank"><i class="fa fa-print"></i></a>
                                       <a href="/Reparation/update/<?= $reparation['RefReparation']; ?>"
                                           class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a>
+                                      <?php if ($_SESSION['statut']=='Admin') { ?>
                                       <a href="/Reparation/delete/<?= $reparation['RefReparation']; ?>"
                                           onclick="return confirm('Êtes-vous sûr de supprimer cet élément ?');"
                                           class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
+                                      <?php } ?>
                                   </td>
                               </tr>
                               <?php } ?>

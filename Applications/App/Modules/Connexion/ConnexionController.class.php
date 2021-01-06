@@ -19,11 +19,6 @@ class ConnexionController extends \Library\BackController
                 $_SESSION['RefUsers'] = $User['RefUsers'];
                 $_SESSION['statut'] = $User['name_statut'];
 
-                $nbre_fctr_imp['reparation'] = $this->managers->getManagerOf('Reparation')->countFctreImp();
-                $nbre_fctr_imp['maintenance'] = $this->managers->getManagerOf('Maintenance')->countFctreImp();
-                $nbre_fctr_imp['vente'] = $this->managers->getManagerOf('Pieces')->countFctreImp();
-                $_SESSION['nbre_facture'] = $nbre_fctr_imp['reparation'] + $nbre_fctr_imp['maintenance'] + $nbre_fctr_imp['vente'];;
-                
                 $this->app()->httpResponse()->redirect('/');
             }
         }

@@ -29,6 +29,9 @@ class PiecesController extends \Library\BackController
     {
         $this->page->addVar("titles", "Suppression d'une pièce");
         $this->managers->getManagerOf('Pieces')->delete($request->getData('id'));
+        $_SESSION['message']['type'] = 'success';
+        $_SESSION['message']['text'] = 'Suppression réussie !';
+        $_SESSION['message']['number'] = 2;
         $this->app()->httpResponse()->redirect('/Pieces/liste');
     }
     public function executeVente(\Library\HTTPRequest $request)
@@ -50,6 +53,9 @@ class PiecesController extends \Library\BackController
         $this->page->addVar("titles", "Suppression du stock d'une pièce");
 
         $this->managers->getManagerOf('Pieces')->deleteStock($request->getData('id'));
+        $_SESSION['message']['type'] = 'success';
+        $_SESSION['message']['text'] = 'Suppression réussie !';
+        $_SESSION['message']['number'] = 2;
         $this->app()->httpResponse()->redirect('/Pieces/liste');
     }
     public function executeAddVente(\Library\HTTPRequest $request)
@@ -58,6 +64,9 @@ class PiecesController extends \Library\BackController
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Pieces')->addVente($request);
+            $_SESSION['message']['type'] = 'success';
+            $_SESSION['message']['text'] = 'Ajout réussie !';
+            $_SESSION['message']['number'] = 2;
             $this->app()->httpResponse()->redirect('/Pieces/vente/liste');
         }
         $pieces = $this->managers->getManagerOf('Pieces')->liste();
@@ -69,7 +78,10 @@ class PiecesController extends \Library\BackController
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Pieces')->updateVente($request);
-            //$this->app()->httpResponse()->redirect('/Pieces/vente/liste');  
+            $_SESSION['message']['type'] = 'success';
+            $_SESSION['message']['text'] = 'Modification réussie !';
+            $_SESSION['message']['number'] = 2;
+            $this->app()->httpResponse()->redirect('/Pieces/vente/liste');  
         }
 
         $vente = $this->managers->getManagerOf('Pieces')->getVente($request->getData('id'));
@@ -98,6 +110,9 @@ class PiecesController extends \Library\BackController
         $this->page->addVar("titles", "Suppression d'une vente de pièce");
 
         $this->managers->getManagerOf('Pieces')->deleteVente($request->getData('id'));
+        $_SESSION['message']['type'] = 'success';
+        $_SESSION['message']['text'] = 'Suppression réussie !';
+        $_SESSION['message']['number'] = 2;
         $this->app()->httpResponse()->redirect('/Pieces/vente/liste');
     }
     public function executeFacture(\Library\HTTPRequest $request)

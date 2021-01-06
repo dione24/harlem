@@ -15,6 +15,8 @@ require __DIR__ . '/data_nav.php';
     <link rel="stylesheet" href="/assets/dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="/assets/dist/css/skins/skin-blue.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+      <link href="/assets/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
+
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -102,10 +104,6 @@ require __DIR__ . '/data_nav.php';
                                 </li>
                             </ul>
                         </li>
-                        <!-- Control Sidebar Toggle Button -->
-                        <li>
-                            <a href="/assets/#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -149,7 +147,9 @@ require __DIR__ . '/data_nav.php';
                             <li><a href="/Pieces/liste">Liste des Pièces</a></li>
                         </ul>
                     </li>
+                    <?php if ($_SESSION['statut']=='Admin') { ?>
                     <li><a href="/Compte/liste"><i class="fa fa-users"></i> Utilisateurs</a></li>
+                    <?php } ?>
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>
@@ -176,86 +176,12 @@ require __DIR__ . '/data_nav.php';
             <strong>Copyright &copy; 2020 <a href="https://www.niangaly.ml">CONCEPTION BY NIANGALY</a>.</strong> All
             rights reserved.
         </footer>
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Create the tabs -->
-            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-                <li class="active"><a href="/assets/#control-sidebar-home-tab" data-toggle="tab"><i
-                            class="fa fa-home"></i></a></li>
-                <li><a href="/assets/#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a>
-                </li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <!-- Home tab content -->
-                <div class="tab-pane active" id="control-sidebar-home-tab">
-                    <h3 class="control-sidebar-heading">Recent Activity</h3>
-                    <ul class="control-sidebar-menu">
-                        <li>
-                            <a href="/assets/javascript:;">
-                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                                    <p>Will be 23 on April 24th</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.control-sidebar-menu -->
-
-                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
-                    <ul class="control-sidebar-menu">
-                        <li>
-                            <a href="/assets/javascript:;">
-                                <h4 class="control-sidebar-subheading">
-                                    Custom Template Design
-                                    <span class="pull-right-container">
-                                        <span class="label label-danger pull-right">70%</span>
-                                    </span>
-                                </h4>
-
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.control-sidebar-menu -->
-
-                </div>
-                <!-- /.tab-pane -->
-                <!-- Stats tab content -->
-                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-                <!-- /.tab-pane -->
-                <!-- Settings tab content -->
-                <div class="tab-pane" id="control-sidebar-settings-tab">
-                    <form method="post">
-                        <h3 class="control-sidebar-heading">General Settings</h3>
-
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                Report panel usage
-                                <input type="checkbox" class="pull-right" checked>
-                            </label>
-
-                            <p>
-                                Some information about this general settings option
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-                    </form>
-                </div>
-                <!-- /.tab-pane -->
-            </div>
-        </aside>
-        <div class="control-sidebar-bg"></div>
     </div>
     <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/dist/js/adminlte.min.js"></script>
+    <script src="/assets/sweetalert2/sweetalert2.min.js"></script>
+
     <!-- DataTables -->
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -311,6 +237,25 @@ require __DIR__ . '/data_nav.php';
         });
     });
     </script>
+
+
+        <?php if (!empty($_SESSION['message']) && $_SESSION['message']['number']>0) { ?>
+    <script>
+      $(function() {
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 5000
+        });
+
+        Toast.fire({
+          type: '<?= $_SESSION['message']['type']; ?>',
+          title: '<?= $_SESSION['message']['text']; ?>'
+        });
+        });
+    </script>
+    <?php $_SESSION['message']['number']--; } ?>
 </body>
 
 </html>

@@ -31,7 +31,9 @@
                                 <td>
                                     <a href="#" class="btn btn-xs btn-default" data-toggle="modal" data-target="#modal-default-stock-<?= $piece['RefPieces']; ?>"><i class="fa fa-plus"></i></a>
                                     <a href="#" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#modal-default-<?= $piece['RefPieces']; ?>"><i class="fa fa-edit"></i></a>
+                                    <?php if ($_SESSION['statut']=='Admin') { ?>
                                     <a href="/Pieces/delete/<?= $piece['RefPieces']; ?>" class="btn btn-xs btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i class="fa fa-trash"></i></a>
+                                    <?php } ?>
                                 </td>
                             </tr>
                             <?php } ?>

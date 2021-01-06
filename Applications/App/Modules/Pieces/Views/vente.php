@@ -55,10 +55,12 @@
                                         class="btn btn-xs btn-default" target="_blank"><i class="fa fa-print"></i></a>
                                     <a href="/Pieces/vente/update/<?= $vente['RefVente']; ?>"
                                         class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a>
+                                    <?php if ($_SESSION['statut']=='Admin') { ?>
                                     <a href="/Pieces/vente/delete/<?= $vente['RefVente']; ?>"
                                         class="btn btn-xs btn-danger"
                                         onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i
                                             class="fa fa-trash"></i></a>
+                                    <?php } ?>
                                 </td>
                             </tr>
                             <?php } ?>

@@ -19,6 +19,9 @@ class MaintenanceController extends \Library\BackController {
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Maintenance')->add($request);
+            $_SESSION['message']['type'] = 'success';
+            $_SESSION['message']['text'] = 'Ajout réussie !';
+            $_SESSION['message']['number'] = 2;
             $this->app()->httpResponse()->redirect('/Maintenance/liste');
         }
     }
@@ -27,6 +30,9 @@ class MaintenanceController extends \Library\BackController {
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Maintenance')->update($request);
+            $_SESSION['message']['type'] = 'success';
+            $_SESSION['message']['text'] = 'Modification réussie !';
+            $_SESSION['message']['number'] = 2;
             $this->app()->httpResponse()->redirect('/Maintenance/liste');
         }
 
@@ -37,6 +43,9 @@ class MaintenanceController extends \Library\BackController {
         $this->page->addVar('titles',"Suppression d'une maintenance");
 
         $this->managers->getManagerOf('Maintenance')->delete($request->getData('id'));
+        $_SESSION['message']['type'] = 'success';
+        $_SESSION['message']['text'] = 'Suppression réussie !';
+        $_SESSION['message']['number'] = 2;
         $this->app()->httpResponse()->redirect('/Maintenance/liste');
     }
     public function executeFacture(\Library\HTTPRequest $request) {

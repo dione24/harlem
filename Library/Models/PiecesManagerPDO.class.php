@@ -113,7 +113,7 @@ class PiecesManagerPDO extends PiecesManager
     }
     public function listeReglee()
     {
-        $requete = $this->dao->prepare("SELECT tblvente.*,COUNT(tblstockpieces.RefVente) AS NbrePiece, SUM(tblstockpieces.Quantite*tblpieces.Prix) AS MontantTotal FROM tblvente INNER JOIN tblstockpieces ON (tblvente.RefVente = tblstockpieces.RefVente) INNER JOIN tblpieces ON (tblstockpieces.RefPieces = tblpieces.RefPieces) WHERE tblstockpieces.RefTypeOperation=2 GROUP BY tblvente.RefVente");
+        $requete = $this->dao->prepare("SELECT tblvente.*,COUNT(tblstockpieces.RefVente) AS NbrePiece, SUM(tblstockpieces.Quantite*tblpieces.Prix) AS MontantTotal FROM tblvente INNER JOIN tblstockpieces ON (tblvente.RefVente = tblstockpieces.RefVente) INNER JOIN tblpieces ON (tblstockpieces.RefPieces = tblpieces.RefPieces) WHERE tblstockpieces.RefTypeOperation=2 AND tblvente.RefStatut=2 GROUP BY tblvente.RefVente");
         $requete->execute();
         $resultat = $requete->fetchAll();
         return $resultat;

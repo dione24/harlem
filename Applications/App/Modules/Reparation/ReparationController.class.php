@@ -33,6 +33,9 @@ class ReparationController extends \Library\BackController
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Reparation')->add($request);
+            $_SESSION['message']['type'] = 'success';
+            $_SESSION['message']['text'] = 'Ajout réussie !';
+            $_SESSION['message']['number'] = 2;
             $this->app()->httpResponse()->redirect('/Reparation/liste');
         }
         $pieces = $this->managers->getManagerOf('Pieces')->liste();
@@ -44,6 +47,9 @@ class ReparationController extends \Library\BackController
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Reparation')->update($request);
+            $_SESSION['message']['type'] = 'success';
+            $_SESSION['message']['text'] = 'Modification réussie !';
+            $_SESSION['message']['number'] = 2;
             $this->app()->httpResponse()->redirect('/Reparation/liste');
         } else {
             $vente_pieces = $this->managers->getManagerOf('Pieces')->RepVentePieces($request->getData('id'));
@@ -78,6 +84,9 @@ class ReparationController extends \Library\BackController
         $this->page->addVar("titles", "Suppression réparation");
 
         $this->managers->getManagerOf('Reparation')->delete($request->getData('id'));
+        $_SESSION['message']['type'] = 'success';
+        $_SESSION['message']['text'] = 'Suppression réussie !';
+        $_SESSION['message']['number'] = 2;
         $this->app()->httpResponse()->redirect('/Reparation/liste');
     }
     public function executeFacture(\Library\HTTPRequest $request)
