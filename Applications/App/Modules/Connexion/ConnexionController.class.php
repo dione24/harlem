@@ -23,9 +23,7 @@ class ConnexionController extends \Library\BackController
                 $nbre_fctr_imp['maintenance'] = $this->managers->getManagerOf('Maintenance')->countFctreImp();
                 $nbre_fctr_imp['vente'] = $this->managers->getManagerOf('Pieces')->countFctreImp();
                 $_SESSION['nbre_facture'] = $nbre_fctr_imp['reparation'] + $nbre_fctr_imp['maintenance'] + $nbre_fctr_imp['vente'];;
-
-                $_SESSION['nbre_maintenance'] = $this->managers->getManagerOf('Maintenance')->nbreMtnPrevuMonth(date('m'),date('Y'));
-                $_SESSION['maintenance_prevu'] = $this->managers->getManagerOf('Maintenance')->prevues();
+                
                 $this->app()->httpResponse()->redirect('/');
             }
         }

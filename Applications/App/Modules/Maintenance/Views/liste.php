@@ -33,7 +33,9 @@
                                 <td><?= $maintenance['Prix']; ?></td>
                                 <td class="<?php
                                     $today = date('Y-m-d');
-                                    if ($maintenance['Date']>$today) {
+                                    if ($maintenance['RefStatut']==2) {
+                                        echo "bg-success";
+                                    } elseif ($maintenance['Date']>$today) {
                                         echo "bg-danger";
                                     } elseif ($maintenance['Date']==$today) {
                                         echo "bg-primary";
@@ -43,7 +45,9 @@
                                 >
                                 <?php
                                     $today = date('Y-m-d');
-                                    if ($maintenance['Date']>$today) {
+                                    if ($maintenance['RefStatut']==2) {
+                                        echo "Terminé";
+                                    } elseif ($maintenance['Date']>$today) {
                                         echo "A venir";
                                     } elseif ($maintenance['Date']==$today) {
                                         echo "Aujourd'hui";
@@ -51,7 +55,7 @@
                                         echo "Passé";
                                     }
                                 ?></td>
-                                <td data-toggle="modal" data-target="#modal-maintenance-<?= $maintenance['RefMaintenance']; ?>"><?= $maintenance['Statut']; ?></td>
+                                <td data-toggle="modal" data-target="#modal-maintenance-<?= $maintenance['RefMaintenance']; ?>" class="<?= ($maintenance['RefStatut']==2)?'bg-success':'bg-danger'; ?>"><?= $maintenance['Statut']; ?></td>
                                 <td>
                                     <a href="/Maintenance/facture/<?= $maintenance['RefMaintenance']; ?>" class="btn btn-xs btn-default" target="_blank"><i class="fa fa-print"></i></a>
                                     <a href="#" class="btn btn-xs btn-default" data-toggle="modal" data-target="#modal-maintenance-<?= $maintenance['RefMaintenance']; ?>"><i class="fa fa-eye"></i></a>
@@ -95,12 +99,13 @@
                     <blockquote>
                         <?= $maintenance['Description']; ?>
                     </blockquote>
+                    <input type="hidden" name="id" value="<?= $maintenance['RefMaintenance']; ?>">
                     <?php if ($maintenance['RefStatut']==2) { ?>
                     <blockquote class="bg-success">
                         <?= $maintenance['Rapport']; ?>
                     </blockquote>
+                    <input type="hidden" name="statut" value="2">
                     <?php } else { ?>
-                    <input type="hidden" name="id" value="<?= $maintenance['RefMaintenance']; ?>">
                     <div class="form-group">
                         <label>
                             <input type="radio" name="statut" placeholder="Entrer le nom de la pièce" <?= ($maintenance['RefStatut']==1)?'checked':''; ?> value="1" class="statut_non_reglee-<?= $maintenance['RefMaintenance']; ?>">
@@ -113,11 +118,11 @@
                             Reglée
                         </label>
                     </div>
+                    <?php } ?>
                     <div class="div_rapport">
                         <label for="rapport">Rapport</label>
                         <textarea id="rapport" name="rapport" class="form-control"><?= $maintenance['Rapport']; ?></textarea>
                     </div>
-                    <?php } ?>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fermer</button>
                         <button type="submit" class="btn btn-primary">Enrégistrer</button>

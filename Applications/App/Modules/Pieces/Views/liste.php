@@ -10,7 +10,7 @@
                 <div class="box-body">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">
                         <i class="fa fa-plus"></i> Ajouter une Pièce
-                    </button>
+                    </button><br/><br/>
                     <table id="example1" class="table table-bordered table-hover">
                         <thead>
                             <tr>

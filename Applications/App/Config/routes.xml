@@ -16,7 +16,6 @@
 	<route url="/Pieces/vente/delete/([0-9]+)" module="Pieces" action="deleteVente" vars="id"/>
 	<route url="/Pieces/vente/facture/([0-9]+)" module="Pieces" action="facture" vars="id"/>
 
-
 	<route url="/Maintenance/add" module="Maintenance" action="add"/>
 	<route url="/Maintenance/update/([0-9]+)" module="Maintenance" action="update" vars="id"/>
 	<route url="/Maintenance/delete/([0-9]+)" module="Maintenance" action="delete" vars="id"/>
@@ -33,5 +32,5 @@
 	<route url="/Compte/username" module="Compte" action="changeUsername"/>
 	<route url="/Compte/check-password" module="Compte" action="userCheckPassword"/>
 	<route url="/Compte/new-password" module="Compte" action="userNewPassword"/>
-
+	<route url="/Pieces/vente/update/([0-9]+)" module="Pieces" action="updateVente" vars="id"/>
 </routes>

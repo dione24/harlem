@@ -1,3 +1,6 @@
+<?php
+  require __DIR__.'/data_nav.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +13,7 @@
   <link rel="stylesheet" href="/assets/bower_components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="/assets/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="/assets/dist/css/skins/skin-blue.min.css">
-  <link rel="stylesheet" href="/assets/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
 
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -33,7 +36,7 @@
             <li class="dropdown messages-menu">
               <a href="/assets/#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="fa fa-envelope-o"></i>
-                <span class="label label-danger"><?= $_SESSION['nbre_facture']; ?></span>
+                <span class="label label-danger"><?= $countFctreImp; ?></span>
               </a>
               <ul class="dropdown-menu">
                 <li class="header">Factures impayées</li>
@@ -47,14 +50,14 @@
             <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
               <i class="fa fa-wrench"></i>
-              <span class="label label-danger"><?= $_SESSION['nbre_maintenance']; ?></span>
+              <span class="label label-danger"><?= count($resultatMaintenance); ?></span>
             </a>
             <ul class="dropdown-menu">
               <li class="header">Maintenance</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
-                  <?php foreach ($_SESSION['maintenance_prevu'] as $maintenance) { ?>
+                  <?php foreach ($resultatMaintenance as $maintenance) { ?>
                   <li><!-- start message -->
                     <a href="#">
                       <h4 style="margin-left: 0px;">
@@ -119,10 +122,12 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li ><a href="/"><i class="fa fa-home"></i> <span>Accueil</span></a></li>
         <li><a href="/Reparation/add"><i class="fa fa-plus "></i> <span>Reparation</span></a></li>
-        <li><a href="/Pieces/vente/liste"><i class="fa fa-plus "></i> <span>Vente de Pièce</span></a></li>
-        <li><a href="/Reparation/liste"><i class="fa fa-table "></i> <span>Liste des  Reparations</span></a></li>
+        <li ><a href="/Pieces/vente/add"><i class="fa fa-plus"></i> <span>Vente de pièces</span></a></li>
         <li><a href="/Maintenance/add"><i class="fa fa-plus"></i> <span>Maintenance</span></a></li>
+        <li><a href="/Pieces/vente/liste"><i class="fa fa-table "></i> <span>Vente de Pièce</span></a></li>
+        <li><a href="/Reparation/liste"><i class="fa fa-table "></i> <span>Liste des  Reparations</span></a></li>
         <li><a href="/Maintenance/liste"><i class="fa fa-table"></i> <span> Liste des maintenances</span></a></li>
+        <li><a href="/Comptabilite/facture-reglee"><i class="fa fa-money"></i> Comptabilité</a></li>
         <li class="treeview">
           <a href="/assets/#"><i class="fa fa-link"></i> <span>Gestion du Stock</span>
             <span class="pull-right-container">
@@ -133,7 +138,6 @@
             <li><a href="/Pieces/liste">Liste des Pièces</a></li>
           </ul>
         </li>
-        <li><a href="/Comptabilite/facture-reglee"><i class="fa fa-money"></i> Comptabilité</a></li>
         <li><a href="/Compte/liste"><i class="fa fa-users"></i> Utilisateurs</a></li>
       </ul>
       <!-- /.sidebar-menu -->
@@ -238,21 +242,35 @@
 <script src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/assets/dist/js/adminlte.min.js"></script>
-<script src="/assets/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="/assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
 <script>
-  $(function () {
-    $('#example1').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
+  $(document).ready( function () {
+      $('#example1').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'print',
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ]
+      });
+  } );
 </script>
-
+<script>
+    function calculerMontant(piece,prix) {
+      $('#montant'+piece).val($('#quantite'+piece).val()*prix);
+    }
+</script>
 <script>
   $(function(){
     $('#vente_pieces').on('change',function(){
@@ -262,7 +280,7 @@
       for (var i=0;i<data.length;i++) {
         var id = data[i];
         $.get("/Pieces/get-pieces/"+data[i],function(response) {
-          $('#quantite_piece').append('<div class="form-group"><label for="quantite'+response['RefPieces']+'" class="col-sm-2 control-label">'+response['NomPiece']+'</label><div class="col-sm-10"><input type="number" class="form-control" id="quantite'+response['RefPieces']+'" name="quantite['+response['RefPieces']+']" multiple="multiple" value="0"></div></div>');
+          $('#quantite_piece').append('<div class="form-group"><label for="quantite'+response['RefPieces']+'" class="col-sm-2 control-label">'+response['NomPiece']+'</label><div class="col-sm-4"><input type="number" class="form-control" id="quantite'+response['RefPieces']+'" name="quantite['+response['RefPieces']+']" multiple="multiple" value="0" onkeyup="calculerMontant('+response['RefPieces']+','+response['Prix']+')"></div><label for="montant'+response['RefPieces']+'" class="col-sm-2 control-label">Montant</label><div class="col-sm-4"><input type="number" class="form-control" id="montant'+response['RefPieces']+'" value="0" readonly></div></div>');
         });
       }
     });

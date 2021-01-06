@@ -35,12 +35,26 @@
                                 <div class="col-sm-10">
                                     <select id="vente_pieces" name="vente_pieces[]" multiple class="form-control" required>
                                         <?php foreach ($pieces as $piece) { ?>
-                                        <option value="<?= $piece['RefPieces']; ?>"><?= $piece['NomPiece']; ?></option>
+                                        <option value="<?= $piece['RefPieces']; ?>" <?= (isset($vente) && in_array($piece['RefPieces'],$v_pieces))?'selected':''; ?>><?= $piece['NomPiece']; ?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
                             </div>
-                            <div id="quantite_piece"></div>
+                            <div id="quantite_piece">
+                                <?php if (isset($vente_pieces)) {
+                                    foreach ($vente_pieces as $piece) { ?>
+                                <div class="form-group">
+                                    <label for="quantite<?= $piece['RefPieces']; ?>" class="col-sm-2 control-label"><?= $piece['NomPiece']; ?></label>
+                                    <div class="col-sm-4">
+                                        <input type="number" class="form-control" id="quantite<?= $piece['RefPieces']; ?>" name="quantite[<?= $piece['RefPieces']; ?>]" multiple="multiple" value="<?= $piece['Quantite']; ?>" onkeyup="calculerMontant(<?= $piece['RefPieces']; ?>,<?= $piece['Prix']; ?>)">
+                                    </div>
+                                    <label for="montant<?= $piece['RefPieces']; ?>" class="col-sm-2 control-label">Montant</label>
+                                    <div class="col-sm-4">
+                                        <input type="number" class="form-control" id="montant<?= $piece['RefPieces']; ?>"  value="<?= $piece['Quantite']*$piece['Prix']; ?>" readonly>
+                                    </div>
+                                </div>
+                                <?php } } ?>
+                            </div>
                         </div>
                         <div class="box-footer">
                             <button type="submit" class="btn btn-primary">Enregister</button>

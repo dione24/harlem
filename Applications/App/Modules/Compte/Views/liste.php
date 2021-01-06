@@ -8,7 +8,7 @@
                     <h3 class="box-title">Liste des Pièces</h3>
                 </div>
                 <div class="box-body">
-	                <a href="/Compte/add" class="btn btn-primary"><i class="fa fa-plus"></i> Ajouter un utilisateur</a>
+	                <a href="/Compte/add" class="btn btn-primary"><i class="fa fa-plus"></i> Ajouter un utilisateur</a><br/><br/>
                     <table id="example1" class="table table-bordered table-striped">
 						<thead>
 							<tr>
