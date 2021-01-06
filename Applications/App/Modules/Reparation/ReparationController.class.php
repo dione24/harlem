@@ -53,7 +53,6 @@ class ReparationController extends \Library\BackController
     public function executeListe(\Library\HTTPRequest $request)
     {
         $this->page->addVar("titles", "Liste des Voitures en Reparations");
-
         if ($request->method() == 'POST') {
             $reparations = $this->managers->getManagerOf('Reparation')->setStatut($request);
             $this->app()->httpResponse()->redirect('/Reparation/liste');
