@@ -26,7 +26,7 @@
                                 <td><?= $maintenance['Nom']; ?></td>
                                 <td><?= $maintenance['Prenom']; ?></td>
                                 <td><?= $maintenance['Telephone']; ?></td>
-                                <td><?= $maintenance['Prix']; ?></td>
+                                <td><?= number_format($maintenance['Prix'],0,',','.'); ?></td>
                             </tr>
                             <?php } ?>
                             <?php foreach ($reparations as $reparation) { ?>
@@ -36,7 +36,17 @@
                                 <td><?= $reparation['NomClient']; ?></td>
                                 <td><?= $reparation['PrenomClient']; ?></td>
                                 <td><?= $reparation['TelephoneClient']; ?></td>
-                                <td><?= $reparation['Montant']; ?></td>
+                                <td><?= number_format($reparation['Montant'],0,',','.'); ?></td>
+                            </tr>
+                            <?php } ?>
+                            <?php foreach ($ventes as $vente) { ?>
+                            <tr>
+                                <td><?= date('d/m/Y',strtotime($vente['Date'])); ?></td>
+                                <td>Vente de pièces</td>
+                                <td><?= $vente['Nom']; ?></td>
+                                <td><?= $vente['Prenom']; ?></td>
+                                <td><?= $vente['Telephone']; ?></td>
+                                <td><?= number_format($vente['MontantTotal'],0,',','.'); ?></td>
                             </tr>
                             <?php } ?>
                         </tbody>

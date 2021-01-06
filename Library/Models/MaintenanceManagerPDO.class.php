@@ -69,7 +69,7 @@ class MaintenanceManagerPDO extends MaintenanceManager {
         return $resultat['Nbre'];
     }
     public function nbreMtnPrevuMonth($mois,$annee) {
-        $requete = $this->dao->prepare("SELECT COUNT(*) AS Nbre FROM tblmaintenance WHERE MONTH(Date)=:mois AND YEAR(Date)=:annee AND Date>=:date");
+        $requete = $this->dao->prepare("SELECT COUNT(*) AS Nbre FROM tblmaintenance WHERE MONTH(Date)=:mois AND YEAR(Date)=:annee AND Date>=:date AND RefStatut=1");
         $requete->bindValue(':mois',$mois,\PDO::PARAM_INT);
         $requete->bindValue(':annee',$annee,\PDO::PARAM_INT);
         $requete->bindValue(':date',date('Y-m-d'),\PDO::PARAM_STR);
@@ -84,7 +84,7 @@ class MaintenanceManagerPDO extends MaintenanceManager {
         return $resultat['Nbre'];
     }
     public function prevues() {
-        $requete = $this->dao->prepare("SELECT * FROM tblmaintenance INNER JOIN tblstatutreparation ON (tblmaintenance.RefStatut = tblstatutreparation.RefStatut) WHERE MONTH(tblmaintenance.Date)=:mois AND YEAR(tblmaintenance.Date)=:annee AND tblmaintenance.Date>=:date");
+        $requete = $this->dao->prepare("SELECT * FROM tblmaintenance INNER JOIN tblstatutreparation ON (tblmaintenance.RefStatut = tblstatutreparation.RefStatut) WHERE MONTH(tblmaintenance.Date)=:mois AND YEAR(tblmaintenance.Date)=:annee AND tblmaintenance.Date>=:date AND tblmaintenance.RefStatut=1");
         $requete->bindValue(':mois',date('m'),\PDO::PARAM_INT);
         $requete->bindValue(':annee',date('Y'),\PDO::PARAM_INT);
         $requete->bindValue(':date',date('Y-m-d'),\PDO::PARAM_STR);

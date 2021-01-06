@@ -69,7 +69,7 @@ class PiecesController extends \Library\BackController
 
         if ($request->method() == 'POST') {
             $this->managers->getManagerOf('Pieces')->updateVente($request);
-            $this->app()->httpResponse()->redirect('/Pieces/vente/liste');
+            //$this->app()->httpResponse()->redirect('/Pieces/vente/liste');  
         }
 
         $vente = $this->managers->getManagerOf('Pieces')->getVente($request->getData('id'));
@@ -90,6 +90,7 @@ class PiecesController extends \Library\BackController
     {
         $this->page->setTemplate('json');
         $piece = $this->managers->getManagerOf('Pieces')->get($request->getData('id'));
+        $piece['QteRestante'] = $this->managers->getManagerOf('Pieces')->quantiteRestante($piece['RefPieces']);
         $this->page->addVar("piece", $piece);
     }
     public function executeDeleteVente(\Library\HTTPRequest $request)

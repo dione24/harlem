@@ -47,10 +47,11 @@
                                 <td><?= number_format($vente['MontantTotal'], 0, ',', '.'); ?></td>
                                 <td data-toggle="modal" data-target="#modal-vente-<?= $vente['RefVente']; ?>"
                                     class="<?= ($vente['RefStatut'] == 2) ? 'bg-success' : 'bg-danger'; ?>">
-                                    <?= $vente['Statut']; ?></td>
-                                <td>
+                                    <?= $vente['Statut']; ?>
                                     <a href="/Pieces/vente/facture/<?= $vente['RefVente']; ?>"
                                         class="btn btn-xs btn-default" target="_blank"><i class="fa fa-print"></i></a>
+                                </td>
+                                <td>
                                     <a href="/Pieces/vente/update/<?= $vente['RefVente']; ?>"
                                         class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a>
                                     <a href="/Pieces/vente/delete/<?= $vente['RefVente']; ?>"

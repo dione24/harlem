@@ -23,5 +23,8 @@
 
             $reparations = $this->managers->getManagerOf('Reparation')->listeNonReglee();
             $this->page->addVar('reparations',$reparations);
+
+            $ventes = $this->managers->getManagerOf('Pieces')->listeNonReglee();
+            $this->page->addVar('ventes',$ventes);
         }
     }
