@@ -1,5 +1,5 @@
-<section >
-    <br/><br/>
+<section>
+    <br /><br />
 
     <div class="row">
         <div class="col-xs-12">
@@ -10,14 +10,15 @@
                 <div class="box-body">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">
                         <i class="fa fa-plus"></i> Ajouter une Pièce
-                    </button><br/><br/>
+                    </button><br /><br />
                     <table id="example1" class="table table-bordered table-hover">
                         <thead>
                             <tr>
                                 <th>Nom</th>
                                 <th>Qté</th>
                                 <th>Qté Restant</th>
-                                <th>Montant</th>
+                                <th>PU</th>
+                                <th>Montan</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -28,11 +29,18 @@
                                 <td><?= $piece['Qte']; ?></td>
                                 <td><?= $piece['QteRestante']; ?></td>
                                 <td><?= $piece['Prix']; ?></td>
+                                <td><?= $piece['Prix']  * $piece['Qte']; ?></td>
                                 <td>
-                                    <a href="#" class="btn btn-xs btn-default" data-toggle="modal" data-target="#modal-default-stock-<?= $piece['RefPieces']; ?>"><i class="fa fa-plus"></i></a>
-                                    <a href="#" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#modal-default-<?= $piece['RefPieces']; ?>"><i class="fa fa-edit"></i></a>
-                                    <?php if ($_SESSION['statut']=='Admin') { ?>
-                                    <a href="/Pieces/delete/<?= $piece['RefPieces']; ?>" class="btn btn-xs btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i class="fa fa-trash"></i></a>
+                                    <a href="#" class="btn btn-xs btn-default" data-toggle="modal" n
+                                        data-target="#modal-default-stock-<?= $piece['RefPieces']; ?>"><i
+                                            class="fa fa-plus"></i></a>
+                                    <a href="#" class="btn btn-xs btn-primary" data-toggle="modal"
+                                        data-target="#modal-default-<?= $piece['RefPieces']; ?>"><i
+                                            class="fa fa-edit"></i></a>
+                                    <?php if ($_SESSION['statut'] == 'Admin') { ?>
+                                    <a href="/Pieces/delete/<?= $piece['RefPieces']; ?>" class="btn btn-xs btn-danger"
+                                        onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i
+                                            class="fa fa-trash"></i></a>
                                     <?php } ?>
                                 </td>
                             </tr>
@@ -42,15 +50,16 @@
                             <th>Nom</th>
                             <th>Qté</th>
                             <th>Qté Restant</th>
-                            <th>Montant</th>
+                            <th>PU</th>
+                            <th>Montan</th>
                             <th>Actions</th>
-                        </tr>
-                    </tfoot>
-                </table>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 
 <div class="modal fade" id="modal-default">
@@ -59,18 +68,20 @@
             <form method="POST">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
+                        <span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Ajouter une Pièce</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" name="nom_piece" class="form-control" placeholder="Entrer le nom de la pièce">
+                        <input type="text" name="nom_piece" class="form-control"
+                            placeholder="Entrer le nom de la pièce">
                     </div>
                     <div class="form-group">
                         <input type="text" name="prix" class="form-control" placeholder="Entrer le prix de la Pièce ">
                     </div>
                     <div class="form-group">
-                        <input type="number" name="quantite" class="form-control" placeholder="Entrer le stock initial pour cette pièce ">
+                        <input type="number" name="quantite" class="form-control"
+                            placeholder="Entrer le stock initial pour cette pièce ">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -90,15 +101,17 @@
                 <input type="hidden" name="id" value="<?= $piece['RefPieces']; ?>">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
+                        <span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Modifier une Pièce</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" name="nom_piece" class="form-control" placeholder="Entrer le nom de la pièce" value="<?= $piece['NomPiece']; ?>">
+                        <input type="text" name="nom_piece" class="form-control" placeholder="Entrer le nom de la pièce"
+                            value="<?= $piece['NomPiece']; ?>">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="prix" class="form-control" placeholder="Entrer le prix de la Pièce " value="<?= $piece['Prix']; ?>">
+                        <input type="text" name="prix" class="form-control" placeholder="Entrer le prix de la Pièce "
+                            value="<?= $piece['Prix']; ?>">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -117,15 +130,17 @@
                 <input type="hidden" name="id_piece" value="<?= $piece['RefPieces']; ?>">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
+                        <span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Stock d'une pièce</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="date" name="date" class="form-control" placeholder="Entrer la date d'entrée de la pièce">
+                        <input type="date" name="date" class="form-control"
+                            placeholder="Entrer la date d'entrée de la pièce">
                     </div>
                     <div class="form-group">
-                        <input type="number" name="quantite" class="form-control" placeholder="Entrer la quantité de la Pièce ">
+                        <input type="number" name="quantite" class="form-control"
+                            placeholder="Entrer la quantité de la Pièce ">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -147,9 +162,11 @@
                     <?php foreach ($piece['stock'] as $stock) { ?>
                     <tr>
                         <td><?= $stock['Quantite']; ?></td>
-                        <td><?= date('d/m/Y',strtotime($stock['Date'])); ?></td>
+                        <td><?= date('d/m/Y', strtotime($stock['Date'])); ?></td>
                         <td>
-                            <a href="/Pieces/delete-stock/<?= $stock['RefStock']; ?>" class="btn btn-xs btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i class="fa fa-trash"></i></a>
+                            <a href="/Pieces/delete-stock/<?= $stock['RefStock']; ?>" class="btn btn-xs btn-danger"
+                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');"><i
+                                    class="fa fa-trash"></i></a>
                         </td>
                     </tr>
                     <?php } ?>
