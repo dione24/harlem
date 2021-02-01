@@ -18,12 +18,16 @@
                                 <th>Qté</th>
                                 <th>Qté Restant</th>
                                 <th>PU</th>
-                                <th>Montan</th>
+                                <th>Montant</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($pieces as $piece) { ?>
+                            <?php
+                            $montantTotal = 0;
+                            foreach ($pieces as $piece) {
+                                $montantTotal +=  $piece['Prix']  * $piece['Qte'];
+                            ?>
                             <tr>
                                 <td><?= $piece['NomPiece']; ?></td>
                                 <td><?= $piece['Qte']; ?></td>
@@ -51,7 +55,7 @@
                             <th>Qté</th>
                             <th>Qté Restant</th>
                             <th>PU</th>
-                            <th>Montan</th>
+                            <th><?= $montantTotal; ?> </th>
                             <th>Actions</th>
                             </tr>
                         </tfoot>
