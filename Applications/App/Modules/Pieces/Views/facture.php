@@ -12,7 +12,7 @@
             </span>
             <span class="cell-ei-f">
                 <p>Montant TTC:</p>
-                <p><b><?= $TotalTTC . " CFA"; ?></b></p>
+                <p><b><?= $TotalTTC; ?></b></p>
             </span>
         </div>
         <div class="cell-ei">
