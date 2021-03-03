@@ -210,4 +210,13 @@ class PiecesManagerPDO extends PiecesManager
         $resultat = $requete->fetch();
         return $resultat['Nbre'];
     }
+
+    public function GetListeVente($id)
+    {
+        $requete = $this->dao->prepare("SELECT * FROM tblvente INNER JOIN tblstockpieces ON tblstockpieces.RefVente=tblvente.RefVente INNER JOIN tblpieces ON tblpieces.RefPieces=tblstockpieces.RefPieces WHERE tblvente.RefVente=:id");
+        $requete->bindValue(':id', $id, \PDO::PARAM_INT);
+        $requete->execute();
+        $resultat = $requete->fetchAll();
+        return $resultat;
+    }
 }

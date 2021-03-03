@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html>
+
+<style type="text/css" media="print">
+@page {
+    size: auto;
+    /* auto is the initial value */
+    margin: 0mm;
+    /* this affects the margin in the printer settings */
+
+}
+</style>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?= $titles; ?></title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="/assets/bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="/assets/bower_components/Ionicons/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="/assets/dist/css/AdminLTE.min.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <meta charset="utf-8">
+    <title><?= $titles; ?></title>
+    <link rel="stylesheet" type="text/css" href="/assets/bower_components/invoice.css">
+    <script src="https://kit.fontawesome.com/9edf9d6f4e.js" crossorigin="anonymous"></script>
 </head>
+
 <body onload="window.print();">
-<div class="wrapper">
-  <?= $content; ?>
-</div>
-<!-- ./wrapper -->
+    <img src="/assets/bower_components/harlem_logo.png" class="logo-top">
+    <br><br>
+    <div class="entete">
+        <div>
+            <p style="font-size: 18px;border-bottom: 2px solid rgb(236,31,38);"><i class="far fa-file-alt"></i> FACTURE
+                DE</p>
+        </div>
+        <div>
+            <?= $content; ?>
+        </div>
+        <br><br><br>
+        <div class="footer">
+            <div class="footer-info">
+                <div class="footer-cell">
+                    <span class="icone-f">
+                        <i class="fa fa-phone-alt"></i>
+                    </span>
+                    <span class="data-f">
+                        <p>+223 20 80 25 99</p>
+                        <p>+223 82 71 06 57</p>
+                    </span>
+                </div>
+                <div class="footer-cell">
+                    <span class="icone-f">
+                        <i class="far fa-envelope"></i>
+                    </span>
+                    <span class="data-f">
+                        <p><i class="fa fa-mail"> </i>info@harlemservices.com</p>
+                        <p>www.harlemservices.com</p>
+                    </span>
+                </div>
+                <div class="footer-cell">
+                    <span class="icone-f">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="data-f">
+                        <p>Sur la route de Niamana</p>
+                        <p>en face du stade de 26 mars</p>
+                    </span>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>

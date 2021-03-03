@@ -81,7 +81,7 @@ class PiecesController extends \Library\BackController
             $_SESSION['message']['type'] = 'success';
             $_SESSION['message']['text'] = 'Modification réussie !';
             $_SESSION['message']['number'] = 2;
-            $this->app()->httpResponse()->redirect('/Pieces/vente/liste');  
+            $this->app()->httpResponse()->redirect('/Pieces/vente/liste');
         }
 
         $vente = $this->managers->getManagerOf('Pieces')->getVente($request->getData('id'));
@@ -122,6 +122,19 @@ class PiecesController extends \Library\BackController
         $InfoVente = $this->managers->getManagerOf('Pieces')->GetVente($request->getData('id'));
         $this->page->addVar('InfoVente', $InfoVente);
         $vente = $this->managers->getManagerOf('Pieces')->GetListeVente($request->getData('id'));
+        $Total = 0;
+        $Tva = 0;
+        $Montant = 0;
+        $TotalTTC = 0;
+        foreach ($vente as $key => $ventes) {
+            $Montant = $ventes['Prix'] * $ventes['Quantite'];
+            $Total += $Montant;
+            $Tva = ($Total * 0.18);
+        }
+        $this->page->addVar('Montant', $Montant);
+        $this->page->addVar('Total', $Total);
+        $this->page->addVar('Tva', $Tva);
+        $this->page->addVar('TotalTTC', $Montant + $Tva);
         $this->page->addVar('vente', $vente);
     }
 }

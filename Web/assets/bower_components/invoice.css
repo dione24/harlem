@@ -1,0 +1,189 @@
+body {
+	margin: 0px !important;
+	padding: 0px !important;
+	font-family: Verdana;
+	-webkit-print-color-adjust: exact !important;
+}
+p {
+	color: rgba(90,84,85,.5);
+}
+.entete p {
+	font-size: 14px;
+}
+.logo-top {
+	width: 100%;
+}
+.entete {
+	width: 80%;
+	margin: auto;
+}
+.other-info p {
+	width: 80%;
+	margin: auto;
+	padding: 20px 0px;
+	color: black;
+	font-size: 14px;
+}
+.other-info hr {
+	border: 2px solid rgb(236,31,38);
+}
+.footer-info {
+	width: 80%;
+	margin: auto;
+	border-top: 4px solid rgb(236,31,38);
+	padding-top: 8px;
+}
+i {
+	color: rgb(240,100,100);
+}
+.footer-text{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(236,31,38);
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 8px 0px;
+}
+.footer-info .icone-f {
+	display: inline-block;
+	width: 10%;
+	vertical-align: top;
+}
+.footer-info .data-f {
+	display: inline-block;
+	width: 85%;
+}
+.icone-f i {
+	font-size: 20px;
+}
+.data-f p {
+	margin: 0px;
+	font-weight: bold;
+	font-size: 11px;
+}
+.footer-cell {
+	display: inline-block;
+	width: 32%;
+}
+.data-ei-1 {
+	display: inline-block;
+	vertical-align: top;
+	width: 27%;
+}
+.data-ei-2 {
+	display: inline-block;
+	vertical-align: top;
+	width: 68%;
+	border-left: 2px solid rgb(236,31,38);
+	padding-left: 20px;
+}
+.data-ei-2 h2 {
+	font-size: 56px;
+	color: rgb(236,31,38);
+	text-align: center;
+	margin: 0px 0px;
+}
+.cell-ei {
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+}
+.cell-ei-i {
+	display: inline-block;
+	vertical-align: top;
+	width: 16%;
+	vertical-align: top;
+	text-align: center;
+}
+.cell-ei-f {
+	display: inline-block;
+	vertical-align: top;
+	width: 75%;
+}
+.cell-ei-i i {
+	font-size: 28px;
+}
+.cell-ei-f p {
+	margin: 0px;
+}
+.content {
+	width: 100%;
+}
+.content table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 14px;
+}
+.content table thead {
+	background-color: rgb(236,31,38);
+	color: white;
+	text-align: left;
+}
+.content table thead th {
+	padding: 8px 0px;
+	font-weight: bold;
+}
+.content table tbody td {
+	min-width: 40px;
+	color: black;
+	padding: 16px 0px;
+}
+.content table tbody tr:nth-child(even) {
+	background-color: rgb(230,231,233);
+}
+.content table tbody tr:nth-child(odd) {
+	background-color: rgb(242,243,244);
+}
+.invoice-footer-1 .icone-if {
+	display: inline-block;
+	vertical-align: top;
+	width: 10%;
+	font-size: 36px;
+	text-align: center;
+}
+.invoice-footer-1 .data-if {
+	display: inline-block;
+	vertical-align: top;
+	width: 85%;
+}
+.calcul-if p {
+	margin: 0px;
+	padding: 6px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgb(236,31,38);
+}
+.invoice-footer-2 {
+	background-color: rgb(236,31,38);
+}
+.invoice-footer-2 td {
+	padding: 8px 0px;
+	font-weight: bold;
+	text-align: left;
+	color: white !important;
+	font-size: 16px;
+}
+.invoice-footer-2 i {
+	color: white !important;
+}
+@media print {
+	.footer-text{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: rgb(236,31,38);
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+		padding: 8px 0px;
+	}
+}
+@page {
+	margin: 0%;
+}
