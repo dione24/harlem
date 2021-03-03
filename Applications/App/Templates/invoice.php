@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/9edf9d6f4e.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="window.print();">
+<body onload="window.print();"><br><br>
     <img src="/assets/bower_components/harlem_logo.png" class="logo-top">
     <br><br>
     <div class="entete">
