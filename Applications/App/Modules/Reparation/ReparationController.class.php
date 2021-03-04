@@ -95,9 +95,16 @@ class ReparationController extends \Library\BackController
         $this->page->addVar("titles", "Facture de la réparation");
 
         $reparation = $this->managers->getManagerOf('Reparation')->get($request->getData('id'));
-        $this->page->addVar('reparation', $reparation);
 
         $pieces = $this->managers->getManagerOf('Pieces')->ventePieces($reparation['RefVente']);
+
+        $totalPieces = 0;
+        foreach ($pieces as $piece) {
+            $totalPieces =  $piece['Quantite'] * $piece['Prix'];
+        }
+        $TotalTTC = ($totalPieces + $reparation['Montant']) + (($totalPieces + $reparation['Montant']) * 0.18);
         $this->page->addVar('pieces', $pieces);
+        $this->page->addVar('reparation', $reparation);
+        $this->page->addVar('TotalTTC', $TotalTTC);
     }
 }

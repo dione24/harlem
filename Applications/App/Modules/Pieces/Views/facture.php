@@ -50,13 +50,13 @@
         </thead>
         <tbody>
             <?php foreach ($vente as $key => $ventes) { ?>
-            <tr>
-                <td></td>
-                <td><?= $ventes['NomPiece']; ?> </td>
-                <td><?= $ventes['Quantite']; ?></td>
-                <td><?= $ventes['Prix']; ?> </td>
-                <td><?= $Montant; ?></td>
-            </tr>
+                <tr>
+                    <td></td>
+                    <td><?= $ventes['NomPiece']; ?> </td>
+                    <td><?= $ventes['Quantite']; ?></td>
+                    <td><?= $ventes['Prix']; ?> </td>
+                    <td><?= $Montant; ?></td>
+                </tr>
             <?php } ?>
         </tbody>
         <tfoot>
